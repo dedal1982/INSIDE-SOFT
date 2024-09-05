@@ -208,7 +208,7 @@ button {
 /*---choose---*/
 .choose {
   width: 100%;
-  background: #1d355b;
+  background: linear-gradient(to bottom, #162335, #1e3760, #162335);
 }
 .choose__wrapper {
   width: 100%;
@@ -278,7 +278,7 @@ button {
 }
 .catalog__wrapper {
   width: 100%;
-  padding: 260px 30px 182px 30px;
+  padding: 180px 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -342,4 +342,19 @@ button {
   bottom: 22px;
   transform: translate(-50%);
   white-space: nowrap;
+}
+/*---footer---*/
+.footer {
+  width: 100%;
+}
+.footer__wrapper {
+  padding: 100px 35px;
+  box-sizing: border-box;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__wrapper p {
+  color: #9c9999;
 }
