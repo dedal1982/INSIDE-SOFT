@@ -369,6 +369,7 @@ button {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 .shop__top {
   width: 100%;
@@ -512,4 +513,30 @@ button {
 }
 .acor-container input:checked + label + .acor-body {
   width: 100%;
+}
+/***************/
+.shop__pay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.shop__select {
+  width: 610px;
+  height: 50px;
+  border: 1px solid #0f76d4;
+  border-radius: 10px;
+}
+.shop__price {
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 25px;
+  background: transparent;
+}
+.shop__price.active {
+  border: 1px solid #0f76d4;
 }
