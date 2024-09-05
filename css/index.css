@@ -151,13 +151,29 @@ button {
 }
 .promo__wrapper {
   width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
+  background: #00114f30;
 }
-.prommo__text {
+.promo__text {
   max-width: 628px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 196px;
+  margin-top: 190px;
+}
+.promo__text h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 116.18px;
+  color: #fff;
+}
+.promo__text p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: #fff;
 }
