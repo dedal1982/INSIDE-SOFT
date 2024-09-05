@@ -45,6 +45,8 @@ button {
   width: 100%;
   padding: 0 47px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 .header__logo {
   max-width: 330px;
@@ -52,6 +54,7 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-right: 155px;
 }
 .header__logo img {
   width: 92px;
@@ -71,4 +74,39 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+.header__menu ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__menu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.header__menu ul li a.active {
+  color: #0f76d4;
+}
+.header__menu ul li img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.header__items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 50px;
+}
+.header__items span {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #00ff38;
 }
