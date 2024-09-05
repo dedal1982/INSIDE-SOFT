@@ -210,13 +210,14 @@ button {
   width: 100%;
   background: #1d355b;
 }
-.choose {
+.choose__wrapper {
   width: 100%;
   padding: 95px 65px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 110px;
 }
 .choose__text {
   display: flex;
@@ -239,4 +240,34 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+.choose__items {
+  display: flex;
+  gap: 28px;
+}
+.choose__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choose__item span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77.45px;
+  color: #fff;
+}
+.choose__item span img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+.choose__item p {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: #8d8d8d;
+  text-align: center;
 }
