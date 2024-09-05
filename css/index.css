@@ -154,6 +154,7 @@ button {
   height: 100%;
   display: flex;
   background: #00114f30;
+  position: relative;
 }
 .promo__text {
   max-width: 628px;
@@ -176,4 +177,17 @@ button {
   font-size: 24px;
   line-height: 29.05px;
   color: #fff;
+}
+.promo__btn {
+  width: 315px;
+  height: 75px;
+  border-radius: 10px;
+  background: #38b7ff;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24.2px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
