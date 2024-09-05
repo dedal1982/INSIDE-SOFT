@@ -110,3 +110,23 @@ button {
   text-transform: uppercase;
   color: #00ff38;
 }
+.header__language {
+  width: 111px;
+  height: 41px;
+  border-radius: 18px;
+  background: #d9d9d933;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #d1d3dc;
+  cursor: pointer;
+}
+.header__language img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
