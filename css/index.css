@@ -140,3 +140,24 @@ button {
   height: 32px;
   object-fit: cover;
 }
+/*---promo---*/
+.promo {
+  width: 100%;
+  background: url(../images/promo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: calc(100dvh - 90px);
+}
+.promo__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.prommo__text {
+  max-width: 628px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
