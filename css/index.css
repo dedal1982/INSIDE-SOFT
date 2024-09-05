@@ -205,3 +205,38 @@ button {
   width: 565px;
   height: auto;
 }
+/*---choose---*/
+.choose {
+  width: 100%;
+  background: #1d355b;
+}
+.choose {
+  width: 100%;
+  padding: 95px 65px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choose__text {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.choose__text img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+.choose__text h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58.09px;
+  color: #fff;
+}
+.choose__text span {
+  background-image: linear-gradient(90.05deg, #49b8db 44.07%, #6b62d3 78.36%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
