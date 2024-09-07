@@ -18,18 +18,26 @@ miniImages.forEach((image) => {
 });
 
 const languageBtn = document.querySelector(".header__language");
+const language = languageBtn.querySelector(".language");
 const languageItem = document.querySelector(".header__language_item");
 
 languageBtn.addEventListener("click", () => {
   languageItem.classList.toggle("active");
 
-  const languageEn = document.querySelector(".header__language-en");
-  const languageRu = document.querySelector(".header__language-ru");
+  const languageEnItem = document.querySelector(".header__language-en");
+  const languageEn = languageEnItem.querySelector(".language-en");
+  const languageRuItem = document.querySelector(".header__language-ru");
+  const languageRu = languageRuItem.querySelector(".language-ru");
 
-  if (languageEn) {
-    languageEn.addEventListener("click", () => {
-      languageBtn.textContent = languageEn.textContent;
+  if (languageEnItem) {
+    languageEnItem.addEventListener("click", () => {
+      language.textContent = languageEn.textContent;
     });
-    // languageBtn.textContent = languageItem.textContent;
   }
+  if (languageRuItem) {
+    languageRuItem.addEventListener("click", () => {
+      language.textContent = languageRu.textContent;
+    });
+  }
+  // languageBtn.textContent = languageItem.textContent;
 });
