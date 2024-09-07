@@ -1,7 +1,10 @@
 .cheath-top {
   width: 100%;
-  background: url(../images/bg-csgo.webp);
+  background: linear-gradient(0deg, rgb(0 0 0 / 55%), rgb(0 0 0 / 73%)),
+    url(../images/bg-csgo.jpg);
   background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
   background-size: cover;
 }
 .cheath-top__wrapper {
@@ -27,6 +30,7 @@
   font-size: 22px;
   line-height: 30px;
   color: #fff;
+  font-style: italic;
 }
 .cheath-top__image {
   flex-basis: 50%;
@@ -42,6 +46,17 @@
 /*---cheaths---*/
 .cheaths {
   width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgb(0 0 0 / 45%),
+      rgb(0 0 0 / 35%),
+      rgb(0 0 0 / 45%)
+    ),
+    url(../images/bg-ch.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .cheaths__wrapper {
   width: 100%;
@@ -55,9 +70,11 @@
 .cheaths__item {
   width: 428px;
   height: 203px;
-  border-radius: 14px;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 .cheaths__item::before {
   content: "";
@@ -73,6 +90,9 @@
   );
   z-index: 1;
   transition: all 0.3s ease-in-out;
+}
+.cheaths__item:hover {
+  border: 1px solid #fff;
 }
 .cheaths__item:hover.cheaths__item::before {
   background: linear-gradient(
