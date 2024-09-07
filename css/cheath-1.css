@@ -1,5 +1,8 @@
 .cheath-top {
   width: 100%;
+  background: url(../images/bg-csgo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cheath-top__wrapper {
   width: 100%;
@@ -16,12 +19,14 @@
 .title {
   font-weight: 800;
   font-size: 60px;
+  color: #fff;
 }
 .subtitle {
   max-width: 90%;
   font-weight: 400;
   font-size: 22px;
   line-height: 30px;
+  color: #fff;
 }
 .cheath-top__image {
   flex-basis: 50%;
@@ -37,7 +42,6 @@
 /*---cheaths---*/
 .cheaths {
   width: 100%;
-  background: #0057da;
 }
 .cheaths__wrapper {
   width: 100%;

@@ -4,7 +4,7 @@ const initialCardCSGO = [
     image:
       "https://avatars.mds.yandex.net/i?id=dc3d95d3be1bc91f25e17c83df292bf3a5deffaf-7753204-images-thumbs&n=13",
     name: "CS GO",
-    price: "2000 ₽",
+    price: "от 2000 ₽",
     props: "true",
     detect: "UNDETECTED",
     color: "#00ff38",
@@ -13,7 +13,7 @@ const initialCardCSGO = [
     image:
       "https://avatars.mds.yandex.net/i?id=dc3d95d3be1bc91f25e17c83df292bf3a5deffaf-7753204-images-thumbs&n=13",
     name: "CS GO",
-    price: "3000 ₽",
+    price: "от 3000 ₽",
     props: "true",
     detect: "DETECTED",
     color: "red",
@@ -22,13 +22,13 @@ const initialCardCSGO = [
     image:
       "https://avatars.mds.yandex.net/i?id=dc3d95d3be1bc91f25e17c83df292bf3a5deffaf-7753204-images-thumbs&n=13",
     name: "CS GO",
-    price: "4000 ₽",
+    price: "от 4000 ₽",
   },
   {
     image:
       "https://avatars.mds.yandex.net/i?id=dc3d95d3be1bc91f25e17c83df292bf3a5deffaf-7753204-images-thumbs&n=13",
     name: "CS GO",
-    price: "5000 ₽",
+    price: "от 5000 ₽",
   },
 ];
 
