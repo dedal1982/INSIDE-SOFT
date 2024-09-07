@@ -7,6 +7,7 @@ const initialCardCSGO = [
     price: "2000 ₽",
     props: "true",
     detect: "UNDETECTED",
+    color: "#00ff38",
   },
   {
     image:
@@ -15,7 +16,7 @@ const initialCardCSGO = [
     price: "3000 ₽",
     props: "true",
     detect: "DETECTED",
-    color: "#00ff38",
+    color: "red",
   },
   {
     image:
@@ -44,8 +45,8 @@ function createCard(item) {
   const cheathDetect = htmlElement.querySelector(".detect");
 
   // Проверяем наличие значения поля в объекте item перед присваиванием его элементу
-  if (item.nameCheat) {
-    nameCheat.href = item.nameCheat;
+  if (item.name) {
+    nameCheat.textContent = item.name;
   }
   if (item.image) {
     gameImage.src = item.image;
@@ -56,6 +57,7 @@ function createCard(item) {
   if (item.props) {
     cheathDetect.classList.add("active");
     cheathDetect.textContent = item.detect;
+    cheathDetect.style.background = item.color;
   }
 
   setEventListeners(htmlElement);
