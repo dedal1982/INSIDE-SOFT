@@ -338,7 +338,7 @@ button {
   justify-content: center;
   width: 125px;
   height: 37px;
-  border-radius: 10px;
+  border-radius: 10px 0 10px 0;
   background: linear-gradient(90deg, #4a9fdc 0%, #3e32cb 100%);
   text-transform: uppercase;
   font-weight: 900;
