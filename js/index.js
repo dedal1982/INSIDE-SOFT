@@ -8,7 +8,7 @@ priceElements.forEach((element) => {
 });
 
 const fullImage = document.querySelector(".shop__images-full");
-const miniImages = document.querySelectorAll(".shop__images-mini ");
+const miniImages = document.querySelectorAll(".shop__images-mini");
 
 miniImages.forEach((image) => {
   image.addEventListener("click", () => {
