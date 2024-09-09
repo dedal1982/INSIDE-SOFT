@@ -7,7 +7,6 @@ priceElements.forEach((element) => {
   });
 });
 
-// JavaScript
 const fullImage = document.querySelector(".shop__images-full");
 const miniImages = document.querySelectorAll(".shop__images-mini ");
 
@@ -39,5 +38,4 @@ languageBtn.addEventListener("click", () => {
       language.textContent = languageRu.textContent;
     });
   }
-  // languageBtn.textContent = languageItem.textContent;
 });
