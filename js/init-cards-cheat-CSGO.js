@@ -37,45 +37,48 @@ const initialCardCSGO = [
 ];
 
 //инициализация карточек CSGO
-function setEventListeners(htmlElement) {}
-const itemTemplate = document.getElementById("csGoTemplate").content;
-const elements = document.querySelector(".cheaths__wrapper");
+const itemTemp = document.getElementById("csGoTemplate");
+if (itemTemp) {
+  function setEventListeners(htmlElement) {}
+  const itemTemplate = document.getElementById("csGoTemplate").content;
+  const elements = document.querySelector(".cheaths__wrapper");
 
-function createCard(item) {
-  const htmlElement = itemTemplate.cloneNode(true);
-  const idCheat = htmlElement.querySelector("#idCheat");
-  const nameCheat = htmlElement.querySelector(".name");
-  const gameImage = htmlElement.querySelector(".cheaths__image");
-  const gamePrice = htmlElement.querySelector(".price");
-  const cheathDetect = htmlElement.querySelector(".detect");
+  function createCard(item) {
+    const htmlElement = itemTemplate.cloneNode(true);
+    const idCheat = htmlElement.querySelector("#idCheat");
+    const nameCheat = htmlElement.querySelector(".name");
+    const gameImage = htmlElement.querySelector(".cheaths__image");
+    const gamePrice = htmlElement.querySelector(".price");
+    const cheathDetect = htmlElement.querySelector(".detect");
 
-  if (item.id) {
-    idCheat.id = item.id;
-  }
-  if (item.name) {
-    nameCheat.textContent = item.name;
-  }
-  if (item.image) {
-    gameImage.src = item.image;
-  }
-  if (item.price) {
-    gamePrice.textContent = item.price;
-  }
-  if (item.props) {
-    cheathDetect.classList.add("active");
-    cheathDetect.textContent = item.detect;
-    cheathDetect.style.background = item.color;
+    if (item.id) {
+      idCheat.id = item.id;
+    }
+    if (item.name) {
+      nameCheat.textContent = item.name;
+    }
+    if (item.image) {
+      gameImage.src = item.image;
+    }
+    if (item.price) {
+      gamePrice.textContent = item.price;
+    }
+    if (item.props) {
+      cheathDetect.classList.add("active");
+      cheathDetect.textContent = item.detect;
+      cheathDetect.style.background = item.color;
+    }
+
+    setEventListeners(htmlElement);
+
+    return htmlElement;
   }
 
-  setEventListeners(htmlElement);
-
-  return htmlElement;
+  initialCardCSGO.forEach(function (item) {
+    const elementCreate = createCard(item);
+    elements.append(elementCreate);
+  });
 }
-
-initialCardCSGO.forEach(function (item) {
-  const elementCreate = createCard(item);
-  elements.append(elementCreate);
-});
 
 const AIMCSGO = {
   imgFull:
@@ -126,6 +129,7 @@ idCheatFunc.forEach((item) => {
   if (item.id === "cheathAim") {
     item.addEventListener("click", () => {
       window.location.href = "shop.html";
+      cheathAim();
     });
   }
 });

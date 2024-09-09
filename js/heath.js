@@ -41,3 +41,46 @@ function cheathAim() {
   mini4.src = AIMCSGO.mini4;
   mini4.alt = "Mini image 4";
 }
+// cheathAim();
+
+const WHCSGO = {
+  imgFull:
+    "https://cs3.pikabu.ru/post_img/big/2014/03/03/9/1393855794_612445310.jpeg",
+  mini1: "https://blog.stanis.ru/imgs/96838.jpg",
+  mini2: "https://i.artfile.ru/2560x1440_1163117_[www.ArtFile.ru].jpg",
+  mini3: "https://i.artfile.ru/3033x1964_1271790_[www.ArtFile.ru].jpg",
+  mini4:
+    "https://i07.fotocdn.net/s209/4c4bcd4a6a3523da/public_pin_l/2584614369.jpg",
+  nameGame: "CS-GO",
+  nameCheath: "AIM",
+};
+
+function cheathWh() {
+  const imgFull = document.querySelector(".shop__images-full");
+  const mini1 = document.querySelector(".mini-1");
+  const mini2 = document.querySelector(".mini-2");
+  const mini3 = document.querySelector(".mini-3");
+  const mini4 = document.querySelector(".mini-4");
+  const name = document.querySelector(".shop__game-name");
+  const cheath = document.querySelector(".shop__game-cheat");
+
+  name.textContent = WHCSGO.nameGame;
+
+  cheath.textContent = WHCSGO.nameCheath;
+
+  imgFull.src = WHCSGO.imgFull;
+  imgFull.alt = "Full image";
+
+  mini1.src = WHCSGO.mini1;
+  mini1.alt = "Mini image 1";
+
+  mini2.src = WHCSGO.mini2;
+  mini2.alt = "Mini image 2";
+
+  mini3.src = WHCSGO.mini3;
+  mini3.alt = "Mini image 3";
+
+  mini4.src = WHCSGO.mini4;
+  mini4.alt = "Mini image 4";
+}
+// cheathWh();
