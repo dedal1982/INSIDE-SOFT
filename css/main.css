@@ -175,3 +175,28 @@ button {
   color: #fff;
   margin-top: 10px;
 }
+.promo__items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 52px;
+}
+.promo__button {
+  width: 315px;
+  height: 80px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #0075ff;
+}
+.promo__purchase {
+  background: #fff;
+  color: #000;
+}
