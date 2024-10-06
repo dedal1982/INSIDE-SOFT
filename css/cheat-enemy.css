@@ -124,6 +124,7 @@
   padding: 25px 25px 35px 25px;
   box-sizing: border-box;
   background: #fff;
+  border-radius: 0 0 30px 30px;
 }
 .page-item {
   width: 100%;
