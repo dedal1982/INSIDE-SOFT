@@ -271,3 +271,62 @@ button {
 .catalog__inner-top h2 span {
   color: #0075ff;
 }
+.catalog__search {
+  width: 315px;
+  height: 70px;
+  border-radius: 200px;
+  position: relative;
+}
+.catalog__search input {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 2px solid #ffffff4d;
+  background: #ffffff0d;
+  backdrop-filter: blur(10px);
+  display: flex;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 30px;
+  padding-right: 70px;
+  box-sizing: border-box;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.catalog__search button {
+  width: 30px;
+  height: 30px;
+  background: url("../icons/search.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+input::placeholder {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #ffffff4d;
+  text-transform: uppercase;
+}
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
