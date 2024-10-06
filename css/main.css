@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +36,8 @@ button {
   min-height: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-family: "Proxima Nova Extra Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -63,6 +63,7 @@ button {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     linear-gradient(180deg, rgba(13, 16, 19, 0) 0%, #0075ff 244.5%);
   backdrop-filter: blur(30px);
+  border-bottom: 2px solid #0075ff;
 }
 .header__wrapper {
   display: flex;
@@ -77,4 +78,36 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__nav li,
+.header__nav li a {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20.71px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.header__nav li:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 117, 255, 0) 0%,
+    rgba(0, 117, 255, 0.3) 100%
+  );
+}
+.header__nav li img {
+  width: 30px;
+  height: 30px;
 }
