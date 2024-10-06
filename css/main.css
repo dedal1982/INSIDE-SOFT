@@ -494,3 +494,15 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   gap: 5px;
 }
+.footer__banks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__banks a img {
+  width: 25px;
+  height: 25px;
+}
+.footer__banks a:last-child img {
+  width: 50px;
+}
