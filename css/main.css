@@ -107,8 +107,10 @@ button {
   height: 30px;
 }
 .header__social {
+  width: 300px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 .header__social a {
@@ -131,7 +133,16 @@ button {
   display: flex;
   background: url(../images/background-promo.png);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   height: 100dvh;
+}
+.promo__inner {
+  display: flex;
+  gap: 32px;
+  margin: 430px auto 287px 118px;
+}
+.promo__inner img {
+  width: 150px;
+  height: 150px;
 }
