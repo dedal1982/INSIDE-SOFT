@@ -42,14 +42,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 26px;
+  padding-right: 26px;
   box-sizing: border-box;
 }
 .cheat-page__name {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -58,4 +57,14 @@
 }
 .cheat-page__name span {
   color: #b1aeae;
+}
+.cheat-page__name h4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #000;
 }
