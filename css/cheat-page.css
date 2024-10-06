@@ -68,3 +68,26 @@
   line-height: 29.23px;
   color: #000;
 }
+.cheat-page__price {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background: #0075ff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.cheat-page__price img {
+  width: 30px;
+  height: 30px;
+}
+.cheat-page__price-tag {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.36px;
+  color: #fff;
+}
