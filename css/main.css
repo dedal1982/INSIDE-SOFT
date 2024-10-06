@@ -268,7 +268,7 @@ button {
   justify-content: space-between;
   z-index: 2;
 }
-.catalog__inner-top h2 {
+h2 {
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 700;
   font-size: 96px;
@@ -276,7 +276,7 @@ button {
   color: #fff;
   text-transform: uppercase;
 }
-.catalog__inner-top h2 span {
+span {
   color: #0075ff;
 }
 .catalog__search {
@@ -371,4 +371,40 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #ff4655;
   text-transform: uppercase;
   background: #ffffff;
+}
+/*---important---*/
+.important {
+  width: 100%;
+  background: linear-gradient(180deg, #0d1013 0%, #282b2e 100%);
+}
+.important__bg {
+  background: url(../images/bg-important.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.important__wrapper {
+  padding-top: 92px;
+  padding-bottom: 234px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.important__description {
+  max-width: 630px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 127px;
+}
+.important__description p {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #fff;
+}
+.important__description p span {
+  color: #0075ff;
 }
