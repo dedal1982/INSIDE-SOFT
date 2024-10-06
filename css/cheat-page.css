@@ -34,3 +34,28 @@
   height: 200px;
   border-radius: 30px 30px 0 0;
 }
+.cheat-page__info {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+  box-sizing: border-box;
+}
+.cheat-page__name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #000;
+}
+.cheat-page__name span {
+  color: #b1aeae;
+}
