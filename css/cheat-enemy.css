@@ -79,3 +79,79 @@
   height: 120px;
   border-radius: 15px;
 }
+.cheat-enemy__centr {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background: #fff;
+}
+.cheat-enemy__centr-tabs {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+.cheat-enemy__centr-tab {
+  width: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 117, 255, 0) 0%,
+    rgba(0, 117, 255, 0.3) 100%
+  );
+  border-radius: 30px 30px 0 0;
+  border-bottom: 2px solid #0075ff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #000;
+  text-transform: uppercase;
+}
+.cheat-enemy__centr-tab.active {
+  background: #fff;
+  border-bottom: 2px solid transparent;
+  cursor: default;
+}
+.cheat-enemy__centr-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px 25px 35px 25px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.page-item {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  background: #0075ff;
+  padding-left: 30px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-item span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #fff;
+}
+.page-item span img {
+  width: 30px;
+  height: 30px;
+}
+.page-item img {
+  width: 30px;
+  height: 30px;
+}
