@@ -43,3 +43,28 @@ if (formAgreement) {
     formAgreement.classList.toggle("active");
   });
 }
+
+//аккордеон
+const pageItemBtn = document.querySelectorAll(".page-item");
+const pageItemAll = document.querySelectorAll(".page-item-inner");
+
+if (pageItemBtn) {
+  pageItemBtn.forEach((item) => {
+    item.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      const pageItem = item.querySelector(".page-item-inner");
+
+      // Если текущий элемент активен, то удаляем класс active
+      if (pageItem.classList.contains("active")) {
+        pageItem.classList.remove("active");
+      } else {
+        // Если не активен, то сначала убираем класс active
+        pageItemAll.forEach((elem) => {
+          elem.classList.remove("active");
+        });
+        // Затем добавляем класс active текущему элементу
+        pageItem.classList.add("active");
+      }
+    });
+  });
+}

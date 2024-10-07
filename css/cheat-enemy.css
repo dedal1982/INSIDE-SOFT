@@ -141,6 +141,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .page-item span {
   display: flex;
@@ -298,4 +299,40 @@
 }
 .form-agreement a {
   color: #0075ff;
+}
+.page-item-inner {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  height: 0;
+  background: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  z-index: 10;
+  border: 1px solid #0075ff;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.page-item-inner.active {
+  visibility: visible;
+  min-height: 200px;
+  height: fit-content;
+  padding: 20px;
+}
+.page-item-inner p {
+  color: transparent;
+}
+.page-item-inner.active p {
+  color: #000;
 }
