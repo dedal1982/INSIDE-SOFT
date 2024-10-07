@@ -34,3 +34,12 @@ if (tabRequirements) {
     requirementsPage.classList.add("active");
   });
 }
+
+//чекбокс соглашение
+const formAgreement = document.querySelector(".form-agreement span");
+
+if (formAgreement) {
+  formAgreement.addEventListener("click", () => {
+    formAgreement.classList.toggle("active");
+  });
+}
