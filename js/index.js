@@ -54,17 +54,32 @@ if (pageItemBtn) {
       ev.preventDefault();
       const pageItem = item.querySelector(".page-item-inner");
 
-      // Если текущий элемент активен, то удаляем класс active
       if (pageItem.classList.contains("active")) {
         pageItem.classList.remove("active");
       } else {
-        // Если не активен, то сначала убираем класс active
         pageItemAll.forEach((elem) => {
           elem.classList.remove("active");
         });
-        // Затем добавляем класс active текущему элементу
         pageItem.classList.add("active");
       }
+    });
+  });
+}
+
+//выбор дней
+const formPageChecks = document.querySelectorAll(".form-page-check");
+const formChecks = document.querySelectorAll(".form-check");
+
+if (formPageChecks) {
+  formPageChecks.forEach((item) => {
+    item.addEventListener("click", () => {
+      formChecks.forEach((elem) => {
+        if (elem.classList.contains("active")) {
+          elem.classList.remove("active");
+        }
+        const formCheck = item.querySelector(".form-check");
+        formCheck.classList.add("active");
+      });
     });
   });
 }
