@@ -166,6 +166,7 @@ button {
 }
 .promo__text h1 .promo__italic {
   font-style: italic;
+  color: #fff;
 }
 .promo__text p {
   max-width: 708px;
@@ -369,9 +370,16 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 600;
   font-size: 24px;
   line-height: 29.23px;
-  color: #ff4655;
+  color: #fff;
   text-transform: uppercase;
-  background: #ffffff;
+  background: #0075ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.catalog__card-button-r {
+  left: auto;
+  right: 31px;
+  bottom: 31px;
 }
 /*---important---*/
 .important {
