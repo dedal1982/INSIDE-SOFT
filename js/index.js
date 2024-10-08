@@ -21,8 +21,8 @@ if (tabOpportunities) {
   tabOpportunities.addEventListener("click", () => {
     tabRequirements.classList.remove("active");
     tabOpportunities.classList.add("active");
-    requirementsPage.classList.remove("active");
-    opportunitiesPage.classList.add("active");
+    opportunitiesPage.classList.remove("active");
+    requirementsPage.classList.add("active");
   });
 }
 
@@ -30,17 +30,19 @@ if (tabRequirements) {
   tabRequirements.addEventListener("click", () => {
     tabOpportunities.classList.remove("active");
     tabRequirements.classList.add("active");
-    opportunitiesPage.classList.remove("active");
-    requirementsPage.classList.add("active");
+    requirementsPage.classList.remove("active");
+    opportunitiesPage.classList.add("active");
   });
 }
 
 //чекбокс соглашение
 const formAgreement = document.querySelector(".form-agreement span");
+const formButton = document.querySelector(".form-button");
 
 if (formAgreement) {
   formAgreement.addEventListener("click", () => {
     formAgreement.classList.toggle("active");
+    formButton.classList.toggle("active");
   });
 }
 

@@ -79,6 +79,7 @@
   width: 80px;
   height: 120px;
   border-radius: 15px;
+  cursor: pointer;
 }
 .cheat-enemy__centr {
   width: 100%;
@@ -258,6 +259,12 @@
   line-height: 29.23px;
   color: #fff;
   text-transform: uppercase;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.form-button.active {
+  pointer-events: auto;
+  opacity: 1;
 }
 .form-button img {
   width: 30px;
