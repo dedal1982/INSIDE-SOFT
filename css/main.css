@@ -346,6 +346,15 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-template-columns: repeat(2, minmax(auto, 1fr));
   gap: 20px;
   margin-top: 96px;
+  max-height: 1450px;
+}
+.catalog__gallery-hidden {
+  max-height: 100%;
+  margin-top: 30px;
+  display: none;
+}
+.catalog__gallery-hidden.active {
+  display: grid;
 }
 .catalog__card {
   width: 100%;
@@ -380,6 +389,33 @@ input[type="search"]::-webkit-search-results-decoration {
   left: auto;
   right: 31px;
   bottom: 31px;
+}
+.catalog__button {
+  margin: 100px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 60px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #d06400;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.catalog__button.active {
+  display: none;
+}
+.catalog__button-hidden {
+  display: none;
+}
+.catalog__button-hidden.active {
+  display: flex;
+  margin-top: 50px;
 }
 /*---important---*/
 .important {

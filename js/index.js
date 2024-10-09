@@ -85,3 +85,31 @@ if (formPageChecks) {
     });
   });
 }
+
+//смотреть все карточки игр
+const catalogButton = document.querySelector(".catalog__button");
+const catalogGalleryHidden = document.querySelector(".catalog__gallery-hidden");
+const catalogButtonHidden = document.querySelector(".catalog__button-hidden");
+
+if (catalogButton) {
+  catalogButton.addEventListener("click", () => {
+    catalogGalleryHidden.classList.add("active");
+    catalogButton.classList.add("active");
+    catalogButtonHidden.classList.add("active");
+  });
+}
+
+if (catalogButtonHidden) {
+  catalogButtonHidden.addEventListener("click", () => {
+    catalogGalleryHidden.classList.remove("active");
+    catalogButton.classList.remove("active");
+    catalogButtonHidden.classList.remove("active");
+    const element = document.getElementById("catalogGallery");
+    element.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+// document.getElementById("scrollButton").addEventListener("click", function () {
+//   const element = document.getElementById("catalogGallery");
+//   element.scrollIntoView({ behavior: "smooth" });
+// });
