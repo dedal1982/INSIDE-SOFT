@@ -529,13 +529,16 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 600;
   font-size: 24px;
   line-height: 29.23px;
-  color: #ffffff4d;
+  color: #7d7d7d;
   margin-bottom: 10px;
+  transition: all 0.2s ease-out;
+}
+.footer__list li a:hover {
+  color: #fff;
 }
 .footer__list li a img {
   width: 30px;
   height: 30px;
-  opacity: 0.5;
 }
 .footer__list li:hover {
   opacity: 1;
@@ -556,11 +559,6 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   justify-content: space-between;
   margin-top: 27px;
-}
-.footer__mail {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 .footer__banks {
   display: flex;
