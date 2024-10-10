@@ -158,9 +158,13 @@
   width: 30px;
   height: 30px;
 }
-.page-item img {
+.arrow-img {
   width: 30px;
   height: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.arrow-img.active {
+  transform: rotate(90deg);
 }
 .cheat-enemy__right {
   width: 100%;

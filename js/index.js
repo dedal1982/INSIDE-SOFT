@@ -55,7 +55,8 @@ if (pageItemBtn) {
     item.addEventListener("click", (ev) => {
       ev.preventDefault();
       const pageItem = item.querySelector(".page-item-inner");
-
+      const pageItemArrow = item.querySelector(".arrow-img");
+      pageItemArrow.classList.toggle("active");
       if (pageItem.classList.contains("active")) {
         pageItem.classList.remove("active");
       } else {
@@ -108,8 +109,3 @@ if (catalogButtonHidden) {
     element.scrollIntoView({ behavior: "smooth" });
   });
 }
-
-// document.getElementById("scrollButton").addEventListener("click", function () {
-//   const element = document.getElementById("catalogGallery");
-//   element.scrollIntoView({ behavior: "smooth" });
-// });
