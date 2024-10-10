@@ -521,6 +521,9 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 30px;
   height: 30px;
 }
+.last-title {
+  margin-bottom: 12px;
+}
 .footer__list li a {
   display: flex;
   align-items: center;
@@ -566,8 +569,12 @@ input[type="search"]::-webkit-search-results-decoration {
   gap: 20px;
 }
 .footer__banks a img {
-  width: 25px;
-  height: 25px;
+  width: 100% !important;
+  height: 100% !important;
+  transition: all 0.2s ease-in-out;
+}
+.footer__banks a img:hover {
+  opacity: 0.5;
 }
 .footer__banks a:last-child img {
   width: 50px;
