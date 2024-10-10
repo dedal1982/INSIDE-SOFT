@@ -144,11 +144,25 @@ button {
   gap: 32px;
   margin: 430px auto 287px 118px;
 }
-.promo__inner img {
+.promo-target {
   width: 150px;
   height: 150px;
   margin-top: 22px;
 }
+.promo-target {
+  display: inline-block;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .promo__text {
   display: flex;
   flex-direction: column;
