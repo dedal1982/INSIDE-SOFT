@@ -109,3 +109,14 @@ if (catalogButtonHidden) {
     element.scrollIntoView({ behavior: "smooth" });
   });
 }
+
+//проскроливание картинок
+const scrollContainer = document.querySelector(".cheat-enemy__scroll");
+
+scrollContainer.addEventListener("wheel", (event) => {
+  event.preventDefault();
+  scrollContainer.scrollBy({
+    left: event.deltaY,
+    behavior: "smooth",
+  });
+});
