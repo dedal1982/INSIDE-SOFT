@@ -505,7 +505,10 @@ input[type="search"]::-webkit-search-results-decoration {
   max-width: 220px;
   width: 100%;
 }
-.footer__list li h3 {
+.footer__list-left-title {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -513,6 +516,10 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 26px;
+}
+.footer__list-left-title img {
+  width: 30px;
+  height: 30px;
 }
 .footer__list li a {
   display: flex;
@@ -539,11 +546,10 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-direction: column;
 }
 .footer__list-row {
-  max-width: 777px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: 8px;
 }
 .footer__inner-bottom {
   width: 100%;
@@ -567,4 +573,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .footer__banks a:last-child img {
   width: 50px;
+}
+.footer__game {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #ffffff4d;
+  margin-bottom: 10px;
+}
+.footer__game img {
+  width: 24px !important;
+  height: 24px !important;
+  object-fit: cover;
 }
