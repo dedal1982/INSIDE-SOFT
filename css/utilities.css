@@ -42,6 +42,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  gap: 24px;
 }
 .utilities__inner span {
   font-family: "Proxima Nova Condensed", sans-serif;
@@ -86,4 +87,22 @@
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.utilities__item-text {
+  display: flex;
+  flex-direction: column;
+}
+.utilities__item-text p {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #aaaaaa;
+}
+.utilities__item-text h6 {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.8px;
+  color: #000;
 }
