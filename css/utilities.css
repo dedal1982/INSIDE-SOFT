@@ -38,3 +38,52 @@
   padding-right: 37px;
   box-sizing: border-box;
 }
+.utilities__inner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.utilities__inner span {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #aaaaaa;
+}
+.utilities__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  gap: 20px;
+}
+.utilities__item {
+  height: 100px;
+  border-radius: 14px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.utilities__icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: url(../icons/Ellipse.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.utilities__icon img {
+  width: 28px;
+  height: 28px;
+}
+.utilities__item-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
