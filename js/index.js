@@ -122,3 +122,17 @@ if (scrollContainer) {
     });
   });
 }
+
+//кнопка скачивание файла
+const btnDownload = document.getElementById("downloadBtn");
+
+if (btnDownload) {
+  btnDownload.addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "path/to/your/file.ext"; // Укажите путь к файлу
+    link.download = "filename.ext"; // Укажите имя файла, которое будет предложено для скачивания
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+}
