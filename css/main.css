@@ -478,7 +478,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .footer__wrapper {
   padding-top: 90px;
-  padding-bottom: 90px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
