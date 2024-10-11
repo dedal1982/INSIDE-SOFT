@@ -1,0 +1,24 @@
+.guarantees {
+  width: 100%;
+  background: linear-gradient(180deg, #0d1013 0%, #282b2e 100%);
+}
+.guarantees__bg {
+  background: url(../images/bg-cheat-page.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.guarantees__wrapper {
+  padding-top: 140px;
+  padding-bottom: 125px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+}
+.guarantees__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
