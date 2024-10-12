@@ -36,15 +36,15 @@ if (tabRequirements) {
 }
 
 //чекбокс соглашение
-const formAgreement = document.querySelector(".form-agreement span");
-const formButton = document.querySelector(".form-button");
+// const formAgreement = document.querySelector(".cheat-enemy__agreement span");
+// const formButton = document.querySelectorAll(".no-link");
 
-if (formAgreement) {
-  formAgreement.addEventListener("click", () => {
-    formAgreement.classList.toggle("active");
-    formButton.classList.toggle("active");
-  });
-}
+// if (formAgreement) {
+//   formAgreement.addEventListener("click", () => {
+//     formAgreement.classList.toggle("active");
+//     formButton.classList.add("active");
+//   });
+// }
 
 //аккордеон
 const pageItemBtn = document.querySelectorAll(".page-item");
@@ -86,6 +86,20 @@ if (formPageChecks) {
     });
   });
 }
+
+//запреь на нажатие купить
+const noLink = document.querySelectorAll(".no-link");
+
+if (noLink) {
+  noLink.forEach((link) => {
+    if (!link.classList.contains("active"))
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+      });
+  });
+}
+
+//
 
 //смотреть все карточки игр
 const catalogButton = document.querySelector(".catalog__button");
