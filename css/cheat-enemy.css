@@ -244,6 +244,32 @@
   cursor: pointer;
   margin-bottom: 10px;
 }
+.form-check-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-check-day p {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 63.34px;
+  color: #fff;
+}
+.form-check-coin {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #0075ff;
+  text-transform: capitalize;
+}
+.form-check-coin span {
+  color: #8b8b8b;
+}
 .form-check {
   display: flex;
   align-items: center;
