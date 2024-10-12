@@ -333,43 +333,7 @@
   width: 30px;
   height: 30px;
 }
-.form-agreement {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 13px;
-}
-.form-agreement span {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  border: 1px solid #000000;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.form-agreement span img {
-  width: 18.75px;
-  height: 13.13px;
-}
-.form-agreement span.active {
-  background: #0075ff;
-  border: 1px solid #0075ff;
-}
-.form-agreement p {
-  width: 100%;
-  display: inline;
-  font-family: "Proxima Nova Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 24px;
-  color: #000;
-}
-.form-agreement a {
-  color: #0075ff;
-}
+
 .page-item-inner {
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 600;
