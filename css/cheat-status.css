@@ -22,3 +22,23 @@
   justify-content: space-between;
   gap: 10px;
 }
+.cheat-status__search {
+  width: 448px;
+  height: 72px;
+}
+.cheat-status__search input {
+  background: #fff;
+  color: #000;
+}
+.cheat-status__search input::placeholder {
+  color: #000;
+}
+.cheat-status__search input:focus::placeholder {
+  color: transparent;
+}
+.cheat-status__search button {
+  background: url("../icons/search-b.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
