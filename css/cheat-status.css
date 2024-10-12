@@ -1,0 +1,17 @@
+.cheat-status {
+  width: 100%;
+  background: linear-gradient(180deg, #0d1013 0%, #282b2e 100%);
+}
+.cheat-status__bg {
+  background: url(../images/bg-cheat-page.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.cheat-status__wrapper {
+  padding-top: 138px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
