@@ -203,6 +203,23 @@
   justify-content: center;
   border-radius: 30px 30px 0 0;
 }
+.cheat-enemy__bottom {
+  width: 100%;
+  height: 108px;
+  background: linear-gradient(
+      181.4deg,
+      #ffffff -6.52%,
+      rgba(0, 117, 255, 0.5) 140.56%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  border-radius: 0 0 30px 30px;
+  border-top: 1px solid #0075ff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
 .cheat-enemy__right-form {
   width: 100%;
   display: flex;
