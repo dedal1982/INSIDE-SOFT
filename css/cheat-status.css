@@ -14,6 +14,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 90px;
 }
 .cheat-status__top {
   width: 100%;
@@ -41,4 +42,27 @@
   background-size: cover;
   background-position: center;
   position: absolute;
+}
+.cheat-status__gride {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  gap: 30px 20px;
+}
+.cheat-status__item {
+  width: 100%;
+  height: 240px;
+  border-radius: 14px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+}
+.cheat-status__item-top {
+  display: flex;
+  align-items: center;
+  gap: 17px;
 }
