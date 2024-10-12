@@ -96,7 +96,7 @@ button {
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
-.header__nav li:not(:last-child):hover,
+.header__nav li:hover,
 .header__nav li.active {
   background: linear-gradient(
     180deg,
