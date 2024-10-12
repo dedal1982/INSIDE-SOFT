@@ -56,13 +56,31 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
+
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 .cheat-status__item-top {
   display: flex;
   align-items: center;
   gap: 17px;
+  margin-top: 18px;
+}
+.cheat-status__item-icon {
+  width: 45px;
+  height: 45px;
+  border: 50%;
+  background: url(../icons/Ellipse.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cheat-status__item-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
 }
