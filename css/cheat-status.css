@@ -56,7 +56,6 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -66,7 +65,7 @@
   align-items: center;
   gap: 17px;
   margin-top: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .cheat-status__item-icon {
   width: 45px;
@@ -91,4 +90,42 @@
   font-size: 40px;
   line-height: 48.72px;
   color: #aaaaaa;
+}
+.cheat-status__text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+.cheat-status__text-name {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.23px;
+  color: #000;
+}
+.cheat-status__text-detect {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cheat-status__text-detect p {
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20.71px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+.undetected {
+  color: #00ff00;
+}
+.detected {
+  color: #ff1e00;
+}
+.risky {
+  color: #ffc300;
+}
+.updating {
+  color: #0075ff;
 }
