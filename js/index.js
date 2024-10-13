@@ -78,20 +78,29 @@ const buyArrow = document.querySelectorAll(".buy");
 if (formPageChecks) {
   formPageChecks.forEach((item) => {
     item.addEventListener("click", () => {
-      buyArrow.forEach((item) => {
-        item.classList.remove("active");
-      });
-      const yesLink = item.querySelector(".buy");
-      yesLink.classList.add("active");
       formChecks.forEach((elem) => {
         if (elem.classList.contains("active")) {
           elem.classList.remove("active");
           formAgreement.classList.remove("active");
+          buyArrow.forEach((el) => {
+            el.classList.remove("active");
+          });
         }
         const formCheck = item.querySelector(".form-check");
         formCheck.classList.add("active");
-        formAgreement.classList.add("active");
       });
+    });
+  });
+}
+if (formAgreement) {
+  formAgreement.addEventListener("click", () => {
+    formAgreement.classList.toggle("active");
+    formPageChecks.forEach((item) => {
+      const itemSpan = item.querySelector(".form-check");
+      if (itemSpan.classList.contains("active")) {
+        const itemArrow = item.querySelector(".buy");
+        itemArrow.classList.toggle("active");
+      }
     });
   });
 }

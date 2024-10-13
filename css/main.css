@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
 }
-html,
-body {
+html {
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -375,7 +375,78 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   left: 0;
   bottom: 0;
+  transition: all 0.5s ease-in-out;
 }
+@keyframes skew-x-shakeng {
+  0% {
+    transform: skewX(-15deg);
+  }
+  5% {
+    transform: skewX(15deg);
+  }
+  10% {
+    transform: skewX(-15deg);
+  }
+  15% {
+    transform: skewX(15deg);
+  }
+  20% {
+    transform: skewX(0deg);
+  }
+  25% {
+    transform: skewX(-15deg);
+  }
+  30% {
+    transform: skewX(15deg);
+  }
+  35% {
+    transform: skewX(-15deg);
+  }
+  40% {
+    transform: skewX(15deg);
+  }
+  45% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(-15deg);
+  }
+  55% {
+    transform: skewX(15deg);
+  }
+  60% {
+    transform: skewX(-15deg);
+  }
+  65% {
+    transform: skewX(15deg);
+  }
+  70% {
+    transform: skewX(0deg);
+  }
+  75% {
+    transform: skewX(-15deg);
+  }
+  80% {
+    transform: skewX(15deg);
+  }
+  85% {
+    transform: skewX(-15deg);
+  }
+  90% {
+    transform: skewX(15deg);
+  }
+  95% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+.catalog__card:hover img {
+  animation: skew-x-shakeng 0.3s ease-in-out forwards;
+}
+
 .catalog__card-button {
   position: absolute;
   left: 31px;
