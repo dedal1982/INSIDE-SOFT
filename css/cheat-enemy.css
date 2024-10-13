@@ -39,6 +39,7 @@
   line-height: 29.23px;
   color: #ffffff4d;
   text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .cheat-enemy__back img {
   width: 30px;
