@@ -313,6 +313,8 @@ span {
   height: 70px;
   border-radius: 200px;
   position: relative;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .catalog__search input {
   width: 100%;
@@ -484,7 +486,8 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase;
   background: linear-gradient(
     180deg,
-    rgba(0, 117, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 117, 255, 0) 50%,
     rgba(0, 117, 255, 0.3) 100%
   );
   border-radius: 5px;
@@ -514,9 +517,18 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 29.23px;
   color: #fff;
   text-transform: uppercase;
-  background: #d06400;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 117, 255, 0) 50%,
+    rgba(0, 117, 255, 0.3) 100%
+  );
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.catalog__button:hover {
+  opacity: 0.5;
 }
 .catalog__button.active {
   display: none;
