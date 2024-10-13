@@ -154,3 +154,27 @@ if (btnDownload) {
     document.body.removeChild(link);
   });
 }
+
+//ховер эффект при наведении на кнопки в блоке promo
+const promoButton = document.querySelector(".promo__button");
+const promoPurchase = document.querySelector(".promo__purchase");
+
+if (promoButton) {
+  promoButton.addEventListener("mouseover", function () {
+    promoPurchase.classList.add("active");
+  });
+
+  promoButton.addEventListener("mouseout", function () {
+    promoPurchase.classList.remove("active");
+  });
+}
+
+if (promoPurchase) {
+  promoPurchase.addEventListener("mouseover", function () {
+    promoButton.classList.add("active");
+  });
+
+  promoPurchase.addEventListener("mouseout", function () {
+    promoButton.classList.remove("active");
+  });
+}

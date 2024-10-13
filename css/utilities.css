@@ -24,7 +24,7 @@
 .utilities__back {
   width: 210px;
   height: 72px;
-  border-radius: 30px;
+  border-radius: 35px;
   background: #0075ff;
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 700;
@@ -37,6 +37,10 @@
   padding-left: 43px;
   padding-right: 37px;
   box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+.utilities__back:hover {
+  background: #d06400;
 }
 .utilities__inner {
   display: flex;
