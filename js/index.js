@@ -72,34 +72,29 @@ if (pageItemBtn) {
 //выбор дней
 const formPageChecks = document.querySelectorAll(".form-page-check");
 const formChecks = document.querySelectorAll(".form-check");
+const formAgreement = document.querySelector(".cheat-enemy__agreement span");
+const buyArrow = document.querySelectorAll(".buy");
 
 if (formPageChecks) {
   formPageChecks.forEach((item) => {
     item.addEventListener("click", () => {
+      buyArrow.forEach((item) => {
+        item.classList.remove("active");
+      });
+      const yesLink = item.querySelector(".buy");
+      yesLink.classList.add("active");
       formChecks.forEach((elem) => {
         if (elem.classList.contains("active")) {
           elem.classList.remove("active");
+          formAgreement.classList.remove("active");
         }
         const formCheck = item.querySelector(".form-check");
         formCheck.classList.add("active");
+        formAgreement.classList.add("active");
       });
     });
   });
 }
-
-//запреь на нажатие купить
-const noLink = document.querySelectorAll(".no-link");
-
-if (noLink) {
-  noLink.forEach((link) => {
-    if (!link.classList.contains("active"))
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-      });
-  });
-}
-
-//
 
 //смотреть все карточки игр
 const catalogButton = document.querySelector(".catalog__button");

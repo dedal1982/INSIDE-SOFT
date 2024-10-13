@@ -337,6 +337,12 @@
   width: 30px;
   height: 30px;
 }
+.buy {
+  visibility: hidden;
+}
+.buy.active {
+  visibility: visible;
+}
 .cheat-enemy__agreement {
   display: flex;
   align-items: center;
@@ -352,6 +358,9 @@
   font-size: 16px;
   line-height: 19.49px;
   color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cheat-enemy__agreement span.active {
   background: #000;
