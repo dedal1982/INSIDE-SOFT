@@ -409,63 +409,18 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 @keyframes skew-x-shakeng {
   0% {
-    transform: skewX(-15deg);
+    transform: skewX(-10deg);
   }
   5% {
-    transform: skewX(15deg);
+    transform: skewX(10deg);
   }
   10% {
-    transform: skewX(-15deg);
+    transform: skewX(-10deg);
   }
   15% {
-    transform: skewX(15deg);
+    transform: skewX(10deg);
   }
   20% {
-    transform: skewX(0deg);
-  }
-  25% {
-    transform: skewX(-15deg);
-  }
-  30% {
-    transform: skewX(15deg);
-  }
-  35% {
-    transform: skewX(-15deg);
-  }
-  40% {
-    transform: skewX(15deg);
-  }
-  45% {
-    transform: skewX(0deg);
-  }
-  50% {
-    transform: skewX(-15deg);
-  }
-  55% {
-    transform: skewX(15deg);
-  }
-  60% {
-    transform: skewX(-15deg);
-  }
-  65% {
-    transform: skewX(15deg);
-  }
-  70% {
-    transform: skewX(0deg);
-  }
-  75% {
-    transform: skewX(-15deg);
-  }
-  80% {
-    transform: skewX(15deg);
-  }
-  85% {
-    transform: skewX(-15deg);
-  }
-  90% {
-    transform: skewX(15deg);
-  }
-  95% {
     transform: skewX(0deg);
   }
   100% {
@@ -493,12 +448,7 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 29.23px;
   color: #fff;
   text-transform: uppercase;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 117, 255, 0) 50%,
-    rgba(0, 117, 255, 0.3) 100%
-  );
+  background: #0075ff;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-out;

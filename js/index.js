@@ -178,3 +178,15 @@ if (promoPurchase) {
     promoButton.classList.remove("active");
   });
 }
+
+//статус / посмотреть еще
+const statusGride = document.querySelector(".cheat-status__gride-more");
+const hiddenGrid = document.querySelector(".hidden-grid");
+
+if (statusGride) {
+  statusGride.addEventListener("click", () => {
+    hiddenGrid.classList.toggle("active");
+    const element = document.getElementById("statusGride");
+    element.scrollIntoView({ behavior: "smooth" });
+  });
+}
